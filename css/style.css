@@ -98,12 +98,12 @@ button {
   overflow: hidden;
 }
 
-.card:hover > main {
+.card:hover > .main {
   cursor: pointer;
   background: #3b3879;
 }
 
-.card > main {
+.card > .main {
   padding: 20px;
   background: #1c1f4a;
   border-radius: inherit;
@@ -128,27 +128,27 @@ button {
   color: #d2d3e4;
 }
 
-.card[type=work] {
+.card[cardType=work] {
   background: #ff8c66;
 }
 
-.card[type=play] {
+.card[cardType=play] {
   background: #56c2e6;
 }
 
-.card[type=study] {
+.card[cardType=study] {
   background: #ff5c7c;
 }
 
-.card[type=exercise] {
+.card[cardType=exercise] {
   background: #4acf81;
 }
 
-.card[type=social] {
+.card[cardType=social] {
   background: #7536d3;
 }
 
-.card[type="self care"] {
+.card[cardType="self care"] {
   background: #f1c65b;
 }
 
@@ -211,7 +211,7 @@ button {
 @media (min-width: 768px) {
   .dashboard {
     grid-template-columns: repeat(2, 1fr);
-    width: -webkit-fill-available;
+    width: max-content;
   }
   .profile {
     grid-row: span 2;
@@ -260,7 +260,7 @@ button {
   .profile__main--content {
     margin: 0;
   }
-  .card > main {
+  .card > .main {
     height: 210px;
   }
   .card__top {

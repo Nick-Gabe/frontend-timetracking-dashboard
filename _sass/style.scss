@@ -111,12 +111,12 @@ button {
     animation: appearing 500ms ease-out 0s 1 forwards;
     overflow: hidden;
 
-    &:hover > main {
+    &:hover > .main {
         cursor: pointer;
         background: $ntr-hover-blue;
     }
 
-    & > main {
+    & > .main {
         padding: 20px;
         background: $ntr-dark-blue;
         border-radius: inherit;
@@ -141,22 +141,22 @@ button {
         color: #d2d3e4;
     }
 
-    &[type=work] {
+    &[cardType=work] {
         background: $pmr-light-orange;
     }
-    &[type=play] {
+    &[cardType=play] {
         background: $pmr-soft-blue;
     }
-    &[type=study] {
+    &[cardType=study] {
         background: $pmr-light-red;
     }
-    &[type=exercise] {
+    &[cardType=exercise] {
         background: $pmr-lime-green;
     }
-    &[type=social] {
+    &[cardType=social] {
         background: $pmr-violet;
     }
-    &[type="self care"] {
+    &[cardType="self care"] {
         background: $pmr-soft-yellow;
     }
 }
@@ -221,7 +221,7 @@ button {
 @media (min-width: 768px) {
     .dashboard {
         grid-template-columns: repeat(2, 1fr);
-        width: -webkit-fill-available;
+        width: max-content;
     }
     .profile {
         grid-row: span 2;
@@ -272,7 +272,7 @@ button {
         margin: 0;
     }
 
-    .card > main {
+    .card > .main {
         height: 210px;
     }
     .card__top {
