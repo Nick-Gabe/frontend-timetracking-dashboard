@@ -26,11 +26,11 @@ Users should be able to:
 
 ### Screenshot
 
-![Finished version](./images/finished_screenshot.png)
+![Finished version](./design/finished_screenshot.png)
 
 ### Links
 
-- Solution URL: [Click here](https://your-solution-url.com)
+- Solution URL: [Click here](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw/hub/responsive-timetracker-using-grid-js-and-sass-NgGHHSU0_)
 - Live Site URL: [Click here](https://nick-gabe.github.io/frontend-timetracking-dashboard/)
 
 ## My process
