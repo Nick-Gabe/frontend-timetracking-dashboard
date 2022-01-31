@@ -82,7 +82,7 @@ button {
   transform-origin: center;
 }
 
-.profile__buttons button[selected] {
+.profile__buttons button[data-selected] {
   color: white;
 }
 

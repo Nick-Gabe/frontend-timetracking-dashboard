@@ -95,7 +95,7 @@ button {
         transform-origin: center;
     }
 
-    & button[selected] {
+    & button[data-selected] {
         color: white;
     }
 
