@@ -128,27 +128,27 @@ button {
   color: #d2d3e4;
 }
 
-.card[cardType=work] {
+.card[data-type=work] {
   background: #ff8c66;
 }
 
-.card[cardType=play] {
+.card[data-type=play] {
   background: #56c2e6;
 }
 
-.card[cardType=study] {
+.card[data-type=study] {
   background: #ff5c7c;
 }
 
-.card[cardType=exercise] {
+.card[data-type=exercise] {
   background: #4acf81;
 }
 
-.card[cardType=social] {
+.card[data-type=social] {
   background: #7536d3;
 }
 
-.card[cardType="self care"] {
+.card[data-type="self care"] {
   background: #f1c65b;
 }
 

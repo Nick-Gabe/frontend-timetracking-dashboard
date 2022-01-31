@@ -1,16 +1,16 @@
 function defineTimestamp(json) {
     generateDashboard(json, 'weekly')
-    const dateSort = document.querySelectorAll('[dateFormat]')
+    const dateSort = document.querySelectorAll('[data-format]')
     dateSort.forEach(item => {
         item.onclick = (e = PointerEvent, x = item) => {
-            if (x.getAttribute('selected') !== null) return
+            if (x.getAttribute('data-selected') !== null) return
             else {
-                document.querySelector('[selected]').removeAttribute('selected')
-                x.setAttribute('selected', true)
+                document.querySelector('[data-selected]').removeAttribute('data-selected')
+                x.setAttribute('data-selected', true)
                 fetch('./data.json')
                     .then(response => response.json())
                     .then(json => {
-                        generateDashboard(json, x.getAttribute('dateFormat'), true)
+                        generateDashboard(json, x.getAttribute('data-format'), true)
                     })
             }
         }
@@ -27,7 +27,7 @@ function generateDashboard(json, timestamp) {
 
     const cards = json.map(e => {
         let name = e.title.toLowerCase()
-        return `<div class="card" cardType="${name}">
+        return `<div class="card" data-type="${name}">
         <div class="card__background">
           <img src="./images/icon-${name.split(' ').join('-')}.svg" alt="Background icon">
         </div>

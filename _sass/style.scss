@@ -141,22 +141,22 @@ button {
         color: #d2d3e4;
     }
 
-    &[cardType=work] {
+    &[data-type=work] {
         background: $pmr-light-orange;
     }
-    &[cardType=play] {
+    &[data-type=play] {
         background: $pmr-soft-blue;
     }
-    &[cardType=study] {
+    &[data-type=study] {
         background: $pmr-light-red;
     }
-    &[cardType=exercise] {
+    &[data-type=exercise] {
         background: $pmr-lime-green;
     }
-    &[cardType=social] {
+    &[data-type=social] {
         background: $pmr-violet;
     }
-    &[cardType="self care"] {
+    &[data-type="self care"] {
         background: $pmr-soft-yellow;
     }
 }
